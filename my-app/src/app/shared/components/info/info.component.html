@@ -1,0 +1,9 @@
+<div class="mt-10">
+  <div class="flex justify-center text-lg font-bold my-10">{{textTitle}}</div>
+
+  <div class="flex justify-center items-end text-md font-medium mb-10">Please use the  '<span class="flex items-end text-lg"
+  > {{text}}</span>' button to add your first course </div>
+
+  <ng-content></ng-content>
+  <app-button [buttonText]="addCourseButtonName"  class="flex justify-center"> </app-button>
+</div>

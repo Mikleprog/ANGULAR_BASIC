@@ -1,0 +1,20 @@
+<div *ngFor="let course of courses" class="flex flex-row mx-4 border-2 border-indigo-400 my-4 p-4">
+  <div class="flex-shrink-0 w-3/4 flex-col">
+    <div class="text-lg font-bold h-10"> {{course.title}}</div>
+    <div class="text-sm leading-normal">{{course.course_description}}</div>
+  </div>
+  <div class="flex flex-col ml-4">
+    <div class="font-medium h-8">Authors:
+      <span *ngFor = "let author of course.list_authors;
+       let i = index" class="font-normal">{{author}}<span *ngIf = "i !== course.list_authors.length - 1">, </span>
+      </span>
+    </div>
+    <div class="font-medium h-8">Duration:
+      <span class="font-normal">{{course.duration * 1000  | date:'mm:ss'}} hours </span>
+    </div>
+    <div class="font-medium h-8">Created:
+      <span class="font-normal">{{course.creation_date}}</span>
+    </div>
+    <button class="mx-4 w-32 py-1 bg-blue-500 rounded-md hover:bg-blue-600 text-white px-4">Show course</button>
+  </div>
+</div>
