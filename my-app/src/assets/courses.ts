@@ -13,7 +13,7 @@ export const COURSES: Card[] = [
     title: 'Cloud Foundations',
     creation_date: '01.03.2021',
     duration: 120,
-    course_description:'The Cloud Foundations for Tech course will help you explore cloud services that EPAM provides, operate cloud-related terminology, and become confident when working with cloud technologies',
+    course_description:'The Cloud Foundations for Tech course will help you explore cloud services that EPAM provides,   operate cloud-related terminology, and become confident when working with cloud technologies',
     list_authors:['Boris', 'Anna'],
     edit: true
   },

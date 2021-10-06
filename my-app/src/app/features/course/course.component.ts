@@ -1,6 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { COURSES } from "../../../assets/courses";
-import { Card} from "../../types/inerfaces";
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-course',
@@ -8,7 +6,6 @@ import { Card} from "../../types/inerfaces";
   styleUrls: ['./course.component.css']
 })
 export class CourseComponent implements OnInit {
-  @Input() courseCard: Card = COURSES[0] ;
 
   constructor() { }
 
